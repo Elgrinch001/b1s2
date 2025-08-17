@@ -2,7 +2,7 @@ package com.example;
 
 public class JugadorFutbol {
 
-       String nombre;
+   String nombre;
    int edad;
    String posicion;
    String equipo;
@@ -19,7 +19,7 @@ public class JugadorFutbol {
       System.out.println("Edad: " + this.edad);
       System.out.println("Posición: " + this.posicion);
       System.out.println("Equipo: " + this.equipo);
-      System.out.println("-----------------------------");
+
    }
 
    public void cambiarPosicion(String nuevaPosicion) {

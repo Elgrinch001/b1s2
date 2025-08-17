@@ -3,21 +3,22 @@ package com.example;
 public class Main {
     public static void main(String[] args) {
 
-        Cafe cafe1 = new Cafe("Café de Nariño", "Nariño", 32000f, 10f);
-        Cafe cafe2 = new Cafe("Café de Antioquia", "Antioquia", 28000f, 8f);
-        Cafe cafe3 = new Cafe("Café del Huila", "Huila", 30000f, 5f);
+        Estadio estadio1 = new Estadio("Estadio Metropolitano", "Barranquilla", 46000);
+        Estadio estadio2 = new Estadio("Estadio El Campín", "Bogotá", 40000);
 
-        cafe1.mostrarInformacion();
-        cafe2.mostrarInformacion();
-        cafe3.mostrarInformacion();
+        estadio1.mostrarInformacion();
+        estadio2.mostrarInformacion();
 
-        System.out.println("Precio total de " + cafe1.nombre + ": $" + cafe1.calcularPrecioTotal());
-        System.out.println("Precio total de " + cafe2.nombre + ": $" + cafe2.calcularPrecioTotal());
-        System.out.println("Precio total de " + cafe3.nombre + ": $" + cafe3.calcularPrecioTotal());
-        System.out.println("-----------------------------");
+        JugadorFutbol jugador1 = new JugadorFutbol("James Rodríguez", 32, "Mediocampista", "São Paulo");
+        JugadorFutbol jugador2 = new JugadorFutbol("Radamel Falcao", 37, "Delantero", "Millonarios");
+        JugadorFutbol jugador3 = new JugadorFutbol("David Ospina", 35, "Arquero", "Al Nassr");
 
-        cafe2.actualizarCantidad(12f);
-        System.out.println("Cantidad actualizada de " + cafe2.nombre + ":");
-        cafe2.mostrarInformacion();
+        jugador1.presentarse();
+        jugador2.presentarse();
+        jugador3.presentarse();
+
+        System.out.println("Cambio de posición ");
+        jugador1.cambiarPosicion("Delantero");
+        jugador1.presentarse();
     }
 }

@@ -16,7 +16,6 @@ public class Estadio {
       System.out.println("Nombre del estadio: " + this.nombre);
       System.out.println("Ciudad: " + this.ciudad);
       System.out.println("Capacidad: " + this.capacidad + " personas");
-      System.out.println("-----------------------------");
    }
 }
 
